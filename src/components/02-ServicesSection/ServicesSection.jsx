@@ -10,12 +10,12 @@ const ServicesSection = () => {
   const scope = useRef(null);
   const cardsRef = useRef([]);
 
-  // Service card images from public/assets/service-card folder
+  // Service card images from Cloudinary
   const serviceImages = {
-    assessment: '/assets/service-card/Personalized Profile Assessment.png',
-    shortlisting: '/assets/service-card/Strategic College Shortlisting.png',
-    documentation: '/assets/service-card/Application & Documentation Support.png',
-    scholarship: '/assets/service-card/Scholarship & Loan Guidance.png'
+    assessment: 'https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505360/Personalized_Profile_Assessment_k7ydpv.png',
+    shortlisting: 'https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505361/Strategic_College_Shortlisting_htqi5d.png',
+    documentation: 'https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505359/Application_Documentation_Support_nefmox.png',
+    scholarship: 'https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505363/Scholarship_Loan_Guidance_lbqjgd.png'
   };
 
   const services = [

@@ -181,7 +181,7 @@ const Courses = ({ scrollToForm }) => {
                 </div>
 
                 <div className=' rounded shadow-2xl border-2 border-slate-400 collage-image-6 shadow-black overflow-hidden absolute top-94 right-61 h-25 w-25'>
-                    <img className='h-full w-full' src="/assets/logo/rte-logo1.png" alt="Right Track Education logo" />
+                    <img className='h-full w-full' src="https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766507552/rte-logo2_tc074h.png" alt="Right Track Education logo" />
                 </div>
 
                 <div className=' rounded shadow-2xl border-2 border-slate-400 collage-image-7 shadow-black absolute top-121 right-61 h-35 w-25 overflow-hidden'>

@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <h2 className="text-2xl font-bold">Right Track Education</h2>
             <p className="text-gray-400">Your success is our priority</p>
-            <img className='h-28 w-28 mx-auto md:mx-0 mt-4' src="/assets/logo/rte-logo1.png" alt="Right Track Education logo" />
+            <img className='h-28 w-28 mx-auto md:mx-0 mt-4' src="https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766507552/rte-logo2_tc074h.png" alt="Right Track Education logo" />
           </div>
 
           {/* Navigation */}

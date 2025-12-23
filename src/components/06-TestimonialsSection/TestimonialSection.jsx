@@ -16,7 +16,7 @@ const testimonialData = [
     quote: "They turned my average score into a top college admission. Absolutely crucial guidance.", 
     score: "97.2%", 
     date: "2025",
-    image: "/assets/Testimonials-women/abhinav-roy.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505375/siddharth-salve_fhbvyh.jpg",
   },
   { 
     id: 2, 
@@ -25,7 +25,7 @@ const testimonialData = [
     quote: "It was less guesswork, and more guaranteed planning. Worth every penny.", 
     score: "95.5%", 
     date: "2024",
-    image: "/assets/Testimonials-man/amitav-hira.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505368/ratul-pal_jzkgvi.jpg",
   },
   { 
     id: 3, 
@@ -34,7 +34,7 @@ const testimonialData = [
     quote: "They managed all the documentation and regulatory deadlines for my NEET application perfectly. ", 
     score: "90%", 
     date: "2025",
-    image: "/assets/Testimonials-women/alexander-aashiesh.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505374/shiv-narayan-das_tyugpr.jpg",
   },
   { 
     id: 4, 
@@ -43,7 +43,7 @@ const testimonialData = [
     quote: "Crucial guidance on my Statement of Purpose (SOP) and interview prep made the difference for my MBA admission.", 
     score: "99 Percentile", 
     date: "2023",
-    image: "/assets/Testimonials-man/marwan-ahmed.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505365/prabir-hansda_kwcte9.jpg",
   },
   { 
     id: 5, 
@@ -52,7 +52,7 @@ const testimonialData = [
     quote: "They helped me choose the perfect BBA specialization that aligned with my long-term career goals. Best decision!", 
     score: "85%", 
     date: "2024",
-    image: "/assets/Testimonials-women/othman-el-marzak.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505371/othman-el-marzak_wemxxo.jpg",
   },
   { 
     id: 6, 
@@ -61,7 +61,7 @@ const testimonialData = [
     quote: "I received excellent scholarship advice which dramatically reduced my financial burden. Highly recommending", 
     score: "78%", 
     date: "2025",
-    image: "/assets/Testimonials-man/prabir-hansda.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505369/sadiya-somayea_rspihv.jpg",
   },
   { 
     id: 7, 
@@ -70,7 +70,7 @@ const testimonialData = [
     quote: "They provided superb portfolio guidance and creative aptitude test preparation. I got my top choice!", 
     score: "92%", 
     date: "2024",
-    image: "/assets/Testimonials-women/siddharth-salve.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505370/alexander-aashiesh_acdhil.jpg",
   },
   { 
     id: 8, 
@@ -79,7 +79,7 @@ const testimonialData = [
     quote: "Right Track handled my BITSAT documentation flawlessly. The entire admission process felt streamlined.", 
     score: "350/450", 
     date: "2025",
-    image: "/assets/Testimonials-man/ratul-pal.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505363/marwan-ahmed_oqri99.jpg",
   },
   { 
     id: 9, 
@@ -88,7 +88,7 @@ const testimonialData = [
     quote: "Their guidance wasn't limited to India. They successfully assisted with my international university application.", 
     score: "9.5/10 GPA", 
     date: "2023",
-    image: "/assets/Testimonials-women/shiv-narayan-das.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505370/abhinav-roy_epflnr.jpg",
   },
   { 
     id: 10, 
@@ -97,7 +97,7 @@ const testimonialData = [
     quote: "I saved months of research. Straight onto the right application. Genuine Service! ", 
     score: "91%", 
     date: "2024",
-    image: "/assets/Testimonials-man/sadiya-somayea.jpg",
+    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505363/amitav-hira_q27q1k.jpg",
   },
 ];
 

@@ -1,6 +1,4 @@
 import React from 'react'
-import Lottie from 'lottie-react'
-import salesManAnimation from '../../assets/business-salesman.json'
 import { BadgeCheck, CalendarCheck2, HeartHandshake, University } from 'lucide-react';
 import gsap from 'gsap';
 import { useRef } from 'react';
@@ -90,16 +88,6 @@ const TrustPilotSection = () => {
     { scope }
   );
 
-  const animationOptions = {
-
-  
-        animationData: salesManAnimation, 
-        loop: true,                 // Animation will continuously repeat (Good for engagement)
-        autoplay: true,             // Animation starts playing immediately
-        rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice' // Ensures the animation scales correctly
-        }
-      }
   return (
     <div ref={scope} className='min-h-screen w-full px-4 sm:px-6 lg:px-10 py-8 sm:py-12 lg:py-15 flex flex-col gap-14 bg-gradient-to-t 
              from-blue-500 
@@ -107,16 +95,12 @@ const TrustPilotSection = () => {
       <h2 className='text-3xl sm:text-4xl trust-section-heading text-gray-800 font-bold text-center leading-8 ' >Admissions Made Simple<br /> <span className='text-xl sm:text-2xl font-lg text-gray-600'>The Numbers That Build Trust</span></h2>
       <div className='flex flex-col lg:flex-row items-center trust-section justify-center gap-8   w-full'>
         <div className='w-full lg:w-1/2 animation '>
-        <Lottie 
-                // Pass the imported JSON data and controls
-                {...animationOptions} 
-                
-                // You can control the immediate size here or via parent Tailwind classes
-                style={{ height: '430px' }} 
-                
-                // Optional: Add a shadow to the container for a clean look
-                className="rounded-lg shadow-xl max-w-xl mx-auto"
-            />
+          <img 
+            src="/happy-student-animate.svg" 
+            alt="Happy student illustration" 
+            style={{ height: '430px' }} 
+            className="rounded-lg shadow-xl max-w-xl mx-auto w-full object-cover"
+          />
         </div>
         <div className='w-full lg:w-1/2 trust-card-container  place-items-center  grid grid-cols-1 sm:grid-cols-2 gap-4 ' >
 
