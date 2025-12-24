@@ -125,10 +125,10 @@ const TestimonialSection = () => {
   const blueAccent = "text-blue-600"
 
   return (
-    <div ref={scope} className='min-h-screen w-full py-20  px-9 sm:px-18 lg:px-10 bg-gradient-to-b 
+    <div ref={scope} className='min-h-screen w-full py-12 sm:py-20  px-4 sm:px-9 lg:px-10 bg-gradient-to-b 
              from-blue-500 to-blue-100
              bg-[#f7fdfb]' >
-      <h2 className=" sm:text-center testi-heading text-3xl whitespace-nowrap sm:text-4xl font-extrabold text-gray-200 mb-12">
+      <h2 className=" text-center testi-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-200 mb-8 sm:mb-12 px-2">
         "Real Success Stories" 
       </h2>
 
@@ -145,20 +145,20 @@ const TestimonialSection = () => {
       
       pagination={{clickable : true}}
       breakpoints={{
-        320:{slidesPerView:1, spaceBetween:20},
-        640:{slidesPerView:2, spaceBetween:30},
-        1024:{slidesPerView:3, spaceBetween:40}
+        320:{slidesPerView:1, spaceBetween:1, slidesPerGroup:1},
+        640:{slidesPerView:2, spaceBetween:30, slidesPerGroup:1},
+        1024:{slidesPerView:3, spaceBetween:40, slidesPerGroup:1}
 
       }}
       style={{
         "--swiper-pagination-bottom": "0px",
         //  "--swiper-pagination-color": "white"
       }}
-      className='mySwiper h-105 sm:h-85 max-w-7xl px-4 pb-12'
+      className='mySwiper h-auto sm:h-85 lg:h-105 max-w-7xl px-2 sm:px-4 pb-12'
       >
         {testimonialData.map((item)=>{
           return (<SwiperSlide key={item.id} >
-            <div className="bg-slate-50 px-4 sm:px-6 py-4  rounded-xl shadow-lg border-t-4 border-blue-600 h-95 w-80 sm:w-auto lg:h-75 flex flex-col ">
+            <div className="bg-slate-50 px-3 sm:px-6 py-4  rounded-xl shadow-lg border-t-4 border-blue-600 h-auto sm:h-95 w-full sm:w-80 lg:w-auto lg:h-75 flex flex-col ">
               <img className='h-25 w-25 mb-4 sm:mb-1 sm:h-20 sm:w-20 rounded-full object-cover border-b-4 border-blue-600'  src={item.image} alt={`Student testimonial ${item.name}`} loading="lazy" />
 
               <div className='h-30 px-2 sm:px-0'>

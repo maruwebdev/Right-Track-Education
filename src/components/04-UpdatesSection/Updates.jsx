@@ -30,8 +30,9 @@ const Updates = () => {
         // Update box animation - simple and clean
         gsap.fromTo(".update-box-content", {
             x: -80,
-            opacity: 0,
+            opacity: -0.8,
             duration: 1.8,
+            scale: 0.6,
             ease: "power2.out",
             delay: 1,
            
@@ -40,6 +41,7 @@ const Updates = () => {
             x: 0,
             opacity: 1,
             duration: 1.8,
+            scale: 1,
              scrollTrigger: {
                 trigger: ".update-left-container",
                 start: "top 75%",
