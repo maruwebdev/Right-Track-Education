@@ -158,7 +158,7 @@ const TestimonialSection = () => {
       >
         {testimonialData.map((item)=>{
           return (<SwiperSlide key={item.id} >
-            <div className="bg-white px-4 sm:px-6 py-4  rounded-xl shadow-lg border-t-4 border-blue-600 h-95 w-80 sm:w-auto lg:h-75 flex flex-col ">
+            <div className="bg-slate-50 px-4 sm:px-6 py-4  rounded-xl shadow-lg border-t-4 border-blue-600 h-95 w-80 sm:w-auto lg:h-75 flex flex-col ">
               <img className='h-25 w-25 mb-4 sm:mb-1 sm:h-20 sm:w-20 rounded-full object-cover border-b-4 border-blue-600'  src={item.image} alt={`Student testimonial ${item.name}`} loading="lazy" />
 
               <div className='h-30 px-2 sm:px-0'>

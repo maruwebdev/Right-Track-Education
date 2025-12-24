@@ -9,102 +9,123 @@ const Courses = ({ scrollToForm }) => {
     const scope = useRef(null)
 
     useGSAP(()=>{
-        gsap.from(".collage-image-1",{
-            y: -140,
-            duration: 2,
-            opacity:0,
-            ease: 'power2.out',
-            scrollTrigger:{
-                trigger: ".collage",
-                toggleActions: "play none none reverse",
-                start: "top 80%"
+        // Desktop collage animations (lg+ screens)
+        const isMobile = window.innerWidth < 1024
+        
+        if (!isMobile) {
+            gsap.from(".collage-image-1",{
+                y: -140,
+                duration: 2,
+                opacity:0,
+                ease: 'power2.out',
+                scrollTrigger:{
+                    trigger: ".collage",
+                    toggleActions: "play none none reverse",
+                    start: "top 80%"
 
-            }
+                }
 
-        })
-        gsap.from(".collage-image-2",{
-            x:140,
-            duration: 2,
-            opacity:0,
-            ease: 'power2.out',
-            scrollTrigger:{
-                trigger: ".collage",
-                toggleActions: "play none none reverse",
-                start: "top 60%"
+            })
+            gsap.from(".collage-image-2",{
+                x:140,
+                duration: 2,
+                opacity:0,
+                ease: 'power2.out',
+                scrollTrigger:{
+                    trigger: ".collage",
+                    toggleActions: "play none none reverse",
+                    start: "top 60%"
 
-            }
+                }
 
-        })
+            })
 
-         gsap.from(".collage-image-3",{
-            x: -60,
-            duration: 2,
-            opacity:0,
-            ease: 'power2.out',
-            scrollTrigger:{
-                trigger: ".collage",
-                toggleActions: "play none none reverse",
-                start: "top 60%"
+             gsap.from(".collage-image-3",{
+                x: -60,
+                duration: 2,
+                opacity:0,
+                ease: 'power2.out',
+                scrollTrigger:{
+                    trigger: ".collage",
+                    toggleActions: "play none none reverse",
+                    start: "top 60%"
 
-            }
+                }
 
-        })
+            })
 
-         gsap.from(".collage-image-4",{
-            y: 200,
-            duration: 2,
-            opacity:0,
-            ease: 'power2.out',
-            scrollTrigger:{
-                trigger: ".collage",
-                toggleActions: "play none none reverse",
-                start: "top 60%"
+             gsap.from(".collage-image-4",{
+                y: 200,
+                duration: 2,
+                opacity:0,
+                ease: 'power2.out',
+                scrollTrigger:{
+                    trigger: ".collage",
+                    toggleActions: "play none none reverse",
+                    start: "top 60%"
 
-            }
+                }
 
-        })
+            })
 
-         gsap.from(".collage-image-5",{
-            y: 140,
-            duration: 2,
-            opacity:0,
-            ease: 'power2.out',
-            scrollTrigger:{
-                trigger: ".collage",
-                toggleActions: "play none none reverse",
-                start: "top 60%"
+             gsap.from(".collage-image-5",{
+                y: 140,
+                duration: 2,
+                opacity:0,
+                ease: 'power2.out',
+                scrollTrigger:{
+                    trigger: ".collage",
+                    toggleActions: "play none none reverse",
+                    start: "top 60%"
 
-            }
+                }
 
-        })
+            })
 
-         gsap.from(".collage-image-6",{
-            duration: 3,
-            scale:3,
-            opacity:0,
-            ease: 'power2.out',
-            scrollTrigger:{
-                trigger: ".collage",
-                toggleActions: "play none none reverse",
-                start: "top 60%"
+             gsap.from(".collage-image-6",{
+                duration: 3,
+                scale:3,
+                opacity:0,
+                ease: 'power2.out',
+                scrollTrigger:{
+                    trigger: ".collage",
+                    toggleActions: "play none none reverse",
+                    start: "top 60%"
 
-            }
+                }
 
-        })
+            })
 
-         gsap.from(".collage-image-7",{
-            y: 80,
-            duration: 2,
-            opacity:0,
-            ease: 'power2.out',
-            scrollTrigger:{
-                trigger: ".collage",
-                toggleActions: "play none none reverse",
-                start: "top 60%"
+             gsap.from(".collage-image-7",{
+                y: 80,
+                duration: 2,
+                opacity:0,
+                ease: 'power2.out',
+                scrollTrigger:{
+                    trigger: ".collage",
+                    toggleActions: "play none none reverse",
+                    start: "top 60%"
 
-            }
+                }
 
-        })
+            })
+        } else {
+            // Mobile grid animations
+            gsap.from(".collage-image-1, .collage-image-2, .collage-image-3, .collage-image-4, .collage-image-5, .collage-image-6, .collage-image-7",{
+                y: 50,
+                duration: 1.5,
+                opacity:0,
+                ease: 'power2.out',
+                stagger: 0.15,
+                scrollTrigger:{
+                    trigger: ".mobile-grid",
+                    toggleActions: "play none none reverse",
+                    start: "top 80%"
+
+                }
+
+            })
+        }
 
          gsap.from(".course-card-1",{
             y:150,
@@ -156,6 +177,40 @@ const Courses = ({ scrollToForm }) => {
 
     return (
         <div ref={scope} className='lg:h-screen flex h-full flex-col lg:flex-row w-full bg-gradient-to-t  from-blue-500 to-blue-100 bg-[#f7fdfb]'>
+            {/* Mobile & Tablet Grid Layout */}
+            <div className='lg:hidden w-full p-4 sm:p-6'>
+                <div className='mobile-grid grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 w-full'>
+                    <div className='rounded border-2 border-slate-400 collage-image-1 shadow-2xl shadow-black h-40 sm:h-48 overflow-hidden'>
+                        <img className='h-full w-full object-cover' src="https://images.unsplash.com/photo-1681077375948-3df67cf1a95e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fHVuaXZlcnNpdGllc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="University campus 1" />
+                    </div>
+
+                    <div className='rounded shadow-2xl border-2 border-slate-400 collage-image-2 shadow-black h-40 sm:h-48 overflow-hidden'>
+                        <img className='object-cover h-full w-full' src="https://images.unsplash.com/photo-1605470207062-b72b5cbe2a87?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="University campus 2" />
+                    </div>
+
+                    <div className='rounded shadow-2xl border-2 border-slate-400 collage-image-3 shadow-black h-40 sm:h-48 overflow-hidden'>
+                        <img className='h-full w-full object-cover' src="https://images.unsplash.com/photo-1590579491624-f98f36d4c763?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1443" alt="University campus 3" />
+                    </div>
+
+                    <div className='rounded shadow-2xl border-2 border-slate-400 collage-image-4 shadow-gray-800 h-40 sm:h-48 overflow-hidden'>
+                        <img className='h-full w-full object-cover' src="https://plus.unsplash.com/premium_photo-1691844987935-3051fe73f655?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI5fHx1bml2ZXJzaXRpZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="University campus 4" />
+                    </div>
+
+                    <div className='rounded shadow-2xl border-2 border-slate-400 collage-image-5 shadow-black h-40 sm:h-48 overflow-hidden'>
+                        <img className='h-full w-full object-cover' src="https://images.unsplash.com/photo-1567168544646-208fa5d408fb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkxfHx1bml2ZXJzaXRpZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="University campus 5" />
+                    </div>
+
+                    <div className='rounded shadow-2xl border-2 border-slate-400 collage-image-6 shadow-black overflow-hidden h-40 sm:h-48'>
+                        <img className='h-full w-full object-contain' src="https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766507552/rte-logo2_tc074h.png" alt="Right Track Education logo" />
+                    </div>
+
+                    <div className='rounded shadow-2xl border-2 border-slate-400 collage-image-7 shadow-black h-40 sm:h-48 overflow-hidden'>
+                        <img className='h-full w-full object-cover' src="https://images.unsplash.com/photo-1622470190232-81df3782484b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk5fHx1bml2ZXJzaXRpZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="University campus 6" />
+                    </div>
+                </div>
+            </div>
+
+            {/* Desktop Collage Layout */}
             <div className='hidden h-full lg:flex  collage flex-wrap gap-2  w-1/2'>
             <div className='relative h-full xl:w-[631px]'>
 
