@@ -1,9 +1,11 @@
 
+
 import React from 'react';
 import gsap from 'gsap';
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
-gsap.registerPlugin(ScrollTrigger)
+import { ScrollToPlugin } from 'gsap/all';
+gsap.registerPlugin(ScrollToPlugin);
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -24,6 +26,10 @@ const Footer = () => {
     })
   },{scope})
 
+  const handleScroll = (id) => {
+    gsap.to(window, { duration: 1, scrollTo: id, ease: "power2.out" });
+  };
+
   return (
     <footer ref={scope} className="bg-gray-800  text-white py-8">
       <div className="container mx-auto footer px-4">
@@ -39,10 +45,10 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul>
-              <li className="mb-2"><a href="#" className="hover:text-gray-300">Home</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-gray-300">Courses</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-gray-300">Admissions</a></li>
-              <li className="mb-2"><a href="#" className="hover:text-gray-300">Contact</a></li>
+              <li className="mb-2"><a href="#home" onClick={() => handleScroll('#home')} className="hover:text-gray-300">Home</a></li>
+              <li className="mb-2"><a href="#services" onClick={() => handleScroll('#services')} className="hover:text-gray-300">Services</a></li>
+              <li className="mb-2"><a href="#courses" onClick={() => handleScroll('#courses')} className="hover:text-gray-300">Courses</a></li>
+              <li className="mb-2"><a href="#contact" onClick={() => handleScroll('#contact')} className="hover:text-gray-300">Contact</a></li>
             </ul>
           </div>
 

@@ -29,7 +29,7 @@ const HeroSection = () => {
     })
   },{scope})
   return (
-    <div className=' h-screen relative bg-gradient-to-t 
+    <div id='home' className=' h-screen relative bg-gradient-to-t 
              from-blue-500 
              to-indigo-600"  bg-[#f7fdfb] sm:h-screen w-full ' >
               <HeroSlider />

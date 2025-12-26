@@ -1,7 +1,7 @@
 import React from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useRef, useEffect } from 'react'
+import { useRef} from 'react'
 import { useGSAP } from '@gsap/react'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -150,6 +150,7 @@ const ServicesSection = () => {
 
   return (
     <div 
+      id='services'
       ref={scope} 
       className='min-h-screen w-full px-2 sm:px-4 lg:px-10 py-12 sm:py-16 lg:py-20 bg-gradient-to-b 
              from-blue-500 
@@ -166,7 +167,7 @@ const ServicesSection = () => {
       </div>
 
       {/* Services Grid */}
-      <div className='w-full max-w-7xl mx-auto '>
+      <div className='w-full max-w-7xl mx-auto px-2 sm:px-0 '>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-5'>
           {services.map((service, index) => (
             <div

@@ -57,7 +57,7 @@ const CTAFormSection = React.forwardRef((props, ref) => {
 
   return (
    
-   <div ref={ref}>
+   <div ref={ref} id='contact'>
     <div ref={scope}  className=' cta-section min-h-screen flex relative justify-center items-center w-full bg-gradient-to-t  from-blue-500 to-blue-100 bg-[#f7fdfb] p-4' >
 
       <div className='lg:w-190 lg:h-140 max-w-3xl relative flex flex-col md:flex-row shadow-2xl rounded-2xl overflow-hidden bg-white'>

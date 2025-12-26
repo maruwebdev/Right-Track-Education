@@ -176,7 +176,7 @@ const Courses = ({ scrollToForm }) => {
     },{scope})
 
     return (
-        <div ref={scope} className='lg:h-screen flex h-full flex-col lg:flex-row w-full bg-gradient-to-t  from-blue-500 to-blue-100 bg-[#f7fdfb]'>
+        <div ref={scope} id='courses' className='lg:h-screen flex h-full flex-col lg:flex-row w-full bg-gradient-to-t  from-blue-500 to-blue-100 bg-[#f7fdfb]'>
             {/* Mobile & Tablet Grid Layout */}
             <div className='lg:hidden w-full p-4 sm:p-6'>
                 <div className='mobile-grid grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 w-full'>
