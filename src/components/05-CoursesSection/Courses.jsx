@@ -274,9 +274,9 @@ const Courses = ({ scrollToForm }) => {
 
                     </div>
                     <div className='flex flex-col gap-2 p-3 w-full md:w-1/2'>
-                        <h3 className='text-2xl font-bold text-center text-orange-400'>Don't Miss Your Window!</h3>
+                        <h3 className='text-2xl font-bold text-center text-gray-800/90'>Don't Miss Your Window!</h3>
                         <AdmissionCountdown />
-                        <button onClick={scrollToForm} className='bg-orange-400 py-3 cursor-pointer rounded-lg hover:bg-orange-500/90 w-full '>Check Course Eligibility</button>
+                        <button onClick={scrollToForm} className='bg-orange-400 py-3 cursor-pointer rounded-lg hover:bg-orange-500/90 transition-colors ease-in duration-200 w-full '>Check Course Eligibility</button>
 
                     </div>
 

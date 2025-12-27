@@ -316,7 +316,7 @@ const Form = () => {
               </textarea>
     
               <button type='submit'
-              className='w-full rounded-md cursor-pointer active:scale-95 text-white font-medium bg-emerald-600 py-2 hover:bg-emerald-700'>Submit</button>
+              className='w-full rounded-md cursor-pointer active:scale-95 text-white font-medium bg-emerald-600 py-2 hover:bg-emerald-700 transition-colors ease-in duration-200'>Book Free Consultation</button>
     
               {/* Status message area */}
               {result && (

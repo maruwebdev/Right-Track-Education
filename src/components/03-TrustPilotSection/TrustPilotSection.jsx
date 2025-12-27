@@ -92,7 +92,7 @@ const TrustPilotSection = () => {
     <div ref={scope} className='min-h-screen w-full px-4 sm:px-6 lg:px-10 py-8 sm:py-12 lg:py-15 flex flex-col gap-14 bg-gradient-to-t 
              from-blue-500 
              to-indigo-600"  bg-[#f7fdfb]' >
-      <h2 className='text-3xl sm:text-4xl trust-section-heading text-gray-800 font-bold text-center leading-8 ' >Admissions Made Simple<br /> <span className='text-xl sm:text-2xl font-lg text-gray-600'>The Numbers That Build Trust</span></h2>
+      <h2 className='text-3xl trust-subhead sm:text-4xl trust-section-heading text-gray-800 font-bold text-center leading-8 ' >Admissions Made Simple<br /> <span className='text-xl sm:text-2xl font-lg text-gray-600'>The Numbers That Build Trust</span></h2>
       <div className='flex flex-col lg:flex-row items-center trust-section justify-center gap-8   w-full'>
         <div className='w-full lg:w-1/2 animation '>
           <img 
