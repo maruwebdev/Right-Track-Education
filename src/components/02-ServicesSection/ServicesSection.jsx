@@ -12,10 +12,10 @@ const ServicesSection = () => {
 
   // Service card images from Cloudinary
   const serviceImages = {
-    assessment: 'https://res.cloudinary.com/dq9c71raz/image/upload/v1768127966/personallized-profile-assessment_eczxfg.png',
-    shortlisting: 'https://res.cloudinary.com/dq9c71raz/image/upload/v1768127965/strategic-college-shortlisting_al2zbs.png',
-    documentation: 'https://res.cloudinary.com/dq9c71raz/image/upload/v1768127964/application-document-support_w1y3s3.png',
-    scholarship: 'https://res.cloudinary.com/dq9c71raz/image/upload/v1768127965/scholarship-loan-guidance_m1zvgu.png'
+    assessment: 'https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1768127966/personallized-profile-assessment_eczxfg.png',
+    shortlisting: 'https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1768127965/strategic-college-shortlisting_al2zbs.png',
+    documentation: 'https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1768127964/application-document-support_w1y3s3.png',
+    scholarship: 'https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1768127965/scholarship-loan-guidance_m1zvgu.png'
   };
 
   const services = [
