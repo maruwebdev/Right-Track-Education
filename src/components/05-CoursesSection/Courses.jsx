@@ -236,7 +236,7 @@ const Courses = ({ scrollToForm }) => {
                 </div>
 
                 <div className=' rounded shadow-2xl border-2 border-slate-400 collage-image-6 shadow-black overflow-hidden absolute top-94 right-61 h-25 w-25'>
-                    <img className='h-full w-full' src="https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766507552/rte-logo2_tc074h.png" alt="Right Track Education logo" />
+                    <img className='h-full object-cover w-full' src="https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767697959/rte-logo_jtnuhr.png" alt="Right Track Education logo" />
                 </div>
 
                 <div className=' rounded shadow-2xl border-2 border-slate-400 collage-image-7 shadow-black absolute top-121 right-61 h-35 w-25 overflow-hidden'>
@@ -276,7 +276,7 @@ const Courses = ({ scrollToForm }) => {
                     <div className='flex flex-col gap-2 p-3 w-full md:w-1/2'>
                         <h3 className='text-2xl font-bold text-center text-gray-800/90'>Don't Miss Your Window!</h3>
                         <AdmissionCountdown />
-                        <button onClick={scrollToForm} className='bg-orange-400 py-3 cursor-pointer rounded-lg hover:bg-orange-500/90 transition-colors ease-in duration-200 w-full '>Check Course Eligibility</button>
+                        <button onClick={scrollToForm} className='bg-orange-400 py-3 cursor-pointer rounded-lg hover:bg-orange-500/90 transition-colors ease-in duration-200 w-full '>Connect with Counsellor</button>
 
                     </div>
 

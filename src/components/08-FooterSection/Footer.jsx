@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <h2 className="text-2xl font-bold">Right Track Education</h2>
             <p className="text-gray-400">Your success is our priority</p>
-            <img className='h-28 w-28 mx-auto md:mx-0 mt-4' src="https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766507552/rte-logo2_tc074h.png" alt="Right Track Education logo" />
+            <img className='h-30 w-30 object-cover mx-auto md:mx-0' src="https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767697959/rte-logo_jtnuhr.png" alt="Right Track Education logo" />
           </div>
 
           {/* Navigation */}
@@ -64,10 +64,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <a href="#" className="text-xl hover:text-gray-300"><Facebook /></a>
-              <a href="#" className="text-xl hover:text-gray-300"><Twitter /></a>
-              <a href="#" className="text-xl hover:text-gray-300"><Instagram /></a>
-              <a href="#" className="text-xl hover:text-gray-300"><Linkedin /></a>
+              <a href="https://www.instagram.com/righttrackeducationjaipur?igsh=MXZqOWs4ZGcyMGZyeQ==" target='_blank' className="text-xl hover:text-gray-300"><Instagram /></a>
+              <a href="https://www.facebook.com/profile.php?id=61561316275814" target='_blank' className="text-xl hover:text-gray-300"><Facebook /></a>
+              <a href="#" target='_blank' className="text-xl hover:text-gray-300"><Linkedin /></a>
             </div>
           </div>
         </div>

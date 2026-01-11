@@ -62,7 +62,7 @@ const CTAFormSection = React.forwardRef((props, ref) => {
 
       <div className='lg:w-190 lg:h-140 max-w-3xl relative flex flex-col md:flex-row shadow-2xl rounded-2xl overflow-hidden bg-white'>
         <div className=' cta-left hidden md:flex h-auto relative w-full md:w-1/2 shadow-lg shadow-black flex-col justify-center items-center rounded-r-2xl bg-[url("https://i.pinimg.com/736x/59/c9/37/59c93797aa58940a8d160522b1737c72.jpg")] bg-cover bg-top z-10'>
-        <img src="https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766507552/rte-logo2_tc074h.png" alt="Right Track Education logo" className='h-50 w-50 absolute top-15 left-22' />
+        <img src="https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767697959/rte-logo_jtnuhr.png" alt="Right Track Education logo" className='h-50 w-50 absolute object-cover top-15 left-22' />
         <h2 className='text-3xl mb-9 font-extrabold mask-x-from-72 text-white '>Right Track Education</h2>
         </div>
 

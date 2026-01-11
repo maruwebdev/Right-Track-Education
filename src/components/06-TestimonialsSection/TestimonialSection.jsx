@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import gsap from 'gsap';
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
@@ -11,93 +11,67 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const testimonialData = [
   { 
     id: 1, 
-    name: "Priya Sharma", 
-    college: "IIT BHU", 
-    quote: "They turned my average score into a top college admission. Absolutely crucial guidance.", 
-    score: "97.2%", 
+    name: "Renu Katariya", 
+    college: "VGU University (BSC)", 
+    quote: "Right Track Education provided excellent guidance and quality teaching. A very good institute with supportive teachers and a positive learning environment. The training was useful and helped me achieve academic success.",  
     date: "2025",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505375/siddharth-salve_fhbvyh.jpg",
+    image: "https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767685656/ranu-katariya_e2mgir.jpg",
   },
   { 
     id: 2, 
-    name: "Karan Verma", 
-    college: "SRCC, Delhi University", 
-    quote: "It was less guesswork, and more guaranteed planning. Worth every penny.", 
-    score: "95.5%", 
+    name: "Nayan Somani", 
+    college: "PCU university (B.Tech computer science)", 
+    quote: "Right Track Education guided me clearly about my career options and helped me choose the right path. Their counselling was supportive and informative, which gave me confidence and clarity for my future studies", 
     date: "2024",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505368/ratul-pal_jzkgvi.jpg",
+    image: "https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767685656/nayan-somani_pz95jv.jpg",
   },
   { 
     id: 3, 
-    name: "Aisha Khan", 
-    college: "Manipal Medical College", 
-    quote: "They managed all the documentation and regulatory deadlines for my NEET application perfectly. ", 
-    score: "90%", 
+    name: "Priyal Jain", 
+    college: "Asia pacific college (MBA in healthcare)", 
+    quote: "I am truly thankful to Right Track Education for their guidance during my MBA admission process. They explained everything in detail, from selecting the right MBA specialization to understanding placements and career opportunities.", 
     date: "2025",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505374/shiv-narayan-das_tyugpr.jpg",
+    image: "https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767685656/priya-jain_f5ijhg.jpg",
   },
   { 
     id: 4, 
-    name: "Rahul Mehra", 
-    college: "IIM Ahmedabad (MBA)", 
-    quote: "Crucial guidance on my Statement of Purpose (SOP) and interview prep made the difference for my MBA admission.", 
-    score: "99 Percentile", 
+    name: "Ashok", 
+    college: "VGU University (B.Tech computer science)", 
+    quote: "Right Track Education provided excellent counselling and guidance. They understood my interests, abilities, and career goals, and helped me choose the right course and career path.  ", 
     date: "2023",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505365/prabir-hansda_kwcte9.jpg",
+    image: "https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767685655/ashok_fqqasj.jpg",
   },
   { 
     id: 5, 
-    name: "Sneha Reddy", 
-    college: "Christ University, Bangalore", 
-    quote: "They helped me choose the perfect BBA specialization that aligned with my long-term career goals. Best decision!", 
-    score: "85%", 
+    name: "Priyanshu sethiya", 
+    college: "PCU University (B.Tech computer science)", 
+    quote: "Right Track Education helped me to clear all doubts regarding my college and it also helps to clear the confusion of finding college", 
     date: "2024",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505371/othman-el-marzak_wemxxo.jpg",
+    image: "https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767685656/priyanshu-sethiya_ed9ipz.jpg",
   },
   { 
     id: 6, 
-    name: "Jatin Dahiya", 
-    college: "Amity University, Noida", 
-    quote: "I received excellent scholarship advice which dramatically reduced my financial burden. Highly recommending", 
-    score: "78%", 
+    name: "Namrata Rathore", 
+    college: "VGU University (BA-LLB)", 
+    quote: "Right Track Education provided me with proper guidance and counselling regarding my academic path in BA-LLB. They helped me understand the admission process, course structure, and career opportunities in law.", 
     date: "2025",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505369/sadiya-somayea_rspihv.jpg",
+    image: "https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767685655/namrata-rathore_ykbmz3.jpg",
   },
   { 
     id: 7, 
-    name: "Simran Kaur", 
-    college: "NIFT Delhi (Fashion Design)", 
-    quote: "They provided superb portfolio guidance and creative aptitude test preparation. I got my top choice!", 
-    score: "92%", 
+    name: "Yash Tiwari", 
+    college: "VGU University (B.Tech computer science)", 
+    quote: "Right Track Education provided me with clear, honest, and well-structured counselling. They helped me understand my options, choose the right path based on my interests and goals, and guided me at every step.", 
     date: "2024",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505370/alexander-aashiesh_acdhil.jpg",
+    image: "https://res.cloudinary.com/dq9c71raz/image/upload/f_auto,q_auto/v1767685656/yash-tiwari_e8ypst.jpg",
   },
   { 
     id: 8, 
-    name: "Rohit Pande", 
-    college: "BITS Pilani", 
-    quote: "Right Track handled my BITSAT documentation flawlessly. The entire admission process felt streamlined.", 
-    score: "350/450", 
+    name: "Koshtoum Shrivastav", 
+    college: "Shoolini University (B.tech computer science)", 
+    quote: "Right Track Education provided me with excellent counselling and continuous guidance throughout my college admission process. Their team clearly explained all available options, helped me choose the right course.", 
     date: "2025",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505363/marwan-ahmed_oqri99.jpg",
-  },
-  { 
-    id: 9, 
-    name: "Divya Patel", 
-    college: "University of Toronto (UG)", 
-    quote: "Their guidance wasn't limited to India. They successfully assisted with my international university application.", 
-    score: "9.5/10 GPA", 
-    date: "2023",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505370/abhinav-roy_epflnr.jpg",
-  },
-  { 
-    id: 10, 
-    name: "Harsh Malik", 
-    college: "Jawaharlal Nehru University (JNU)", 
-    quote: "I saved months of research. Straight onto the right application. Genuine Service! ", 
-    score: "91%", 
-    date: "2024",
-    image: "https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505363/amitav-hira_q27q1k.jpg",
+    image: "https://res.cloudinary.com/dq9c71raz/image/upload/v1767685655/koshtoum-shrivastav_n1gtco.jpg",
   },
 ];
 
@@ -105,6 +79,7 @@ const testimonialData = [
 
 const TestimonialSection = () => {
   const scope = useRef(null);
+  const [expandedTestimonials, setExpandedTestimonials] = useState({});
 
   useGSAP(()=>{
     gsap.from(".testi-heading",{
@@ -123,6 +98,13 @@ const TestimonialSection = () => {
   
 
   const blueAccent = "text-blue-600"
+
+  const toggleExpanded = (id) => {
+    setExpandedTestimonials(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
+  };
 
   return (
     <div ref={scope} className='min-h-screen w-full py-12 sm:py-20  px-4 sm:px-9 lg:px-10 bg-gradient-to-b 
@@ -158,18 +140,26 @@ const TestimonialSection = () => {
       >
         {testimonialData.map((item)=>{
           return (<SwiperSlide key={item.id} >
-            <div className="bg-slate-50 px-3 sm:px-6 py-4  rounded-xl shadow-lg border-t-4 border-blue-600 h-auto sm:h-95 w-full sm:w-80 lg:w-auto lg:h-75 flex flex-col ">
+            <div className={`bg-slate-50 px-3 sm:px-6 py-4  rounded-xl shadow-lg border-t-4 border-blue-600 w-full sm:w-80 lg:w-auto flex flex-col transition-all duration-300 ${expandedTestimonials[item.id] ? 'h-auto' : 'h-auto sm:h-95 lg:h-75'}`}>
               <img className='h-25 w-25 mb-4 sm:mb-1 sm:h-20 sm:w-20 rounded-full object-cover border-b-4 border-blue-600'  src={item.image} alt={`Student testimonial ${item.name}`} loading="lazy" />
 
-              <div className='h-30 px-2 sm:px-0'>
-              <p className="italic text-gray-700 text-base sm:text-lg hyphens-auto">
+<div className={`px-2 sm:px-0 ${expandedTestimonials[item.id] ? 'flex-grow' : 'h-30'}`}>
+              <p className={`italic text-gray-700 text-base sm:text-lg hyphens-auto ${!expandedTestimonials[item.id] ? 'line-clamp-4' : ''}`}>
                 "{item.quote}"
               </p>
+              {item.quote.length > 150 && (
+                <button 
+                  onClick={() => toggleExpanded(item.id)}
+                  className="text-blue-600 text-sm font-semibold mt-2 cursor-pointer hover:text-blue-800 transition-colors"
+                >
+                  {expandedTestimonials[item.id] ? 'Read Less' : 'Read More'}
+                </button>
+              )}
               </div>
               
               <div className="mt-2 pt-4 border-t border-gray-100">
                 <p className="font-bold text-gray-600 text-lg sm:text-xl ">{item.name}</p>
-                <p className={`text-sm ${blueAccent}`}>{item.college} ({item.score})</p>
+                <p className={`text-sm ${blueAccent}`}>{item.college}</p>
               </div>
             </div>
 

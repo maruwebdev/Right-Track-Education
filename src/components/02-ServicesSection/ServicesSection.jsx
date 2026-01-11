@@ -12,10 +12,10 @@ const ServicesSection = () => {
 
   // Service card images from Cloudinary
   const serviceImages = {
-    assessment: 'https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505360/Personalized_Profile_Assessment_k7ydpv.png',
-    shortlisting: 'https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505361/Strategic_College_Shortlisting_htqi5d.png',
-    documentation: 'https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505359/Application_Documentation_Support_nefmox.png',
-    scholarship: 'https://res.cloudinary.com/dhk5kzznf/image/upload/f_auto,q_auto/v1766505363/Scholarship_Loan_Guidance_lbqjgd.png'
+    assessment: 'https://res.cloudinary.com/dq9c71raz/image/upload/v1768127966/personallized-profile-assessment_eczxfg.png',
+    shortlisting: 'https://res.cloudinary.com/dq9c71raz/image/upload/v1768127965/strategic-college-shortlisting_al2zbs.png',
+    documentation: 'https://res.cloudinary.com/dq9c71raz/image/upload/v1768127964/application-document-support_w1y3s3.png',
+    scholarship: 'https://res.cloudinary.com/dq9c71raz/image/upload/v1768127965/scholarship-loan-guidance_m1zvgu.png'
   };
 
   const services = [
@@ -173,7 +173,7 @@ const ServicesSection = () => {
             <div
               key={service.id}
               ref={(el) => (cardsRef.current[index] = el)}
-              className='service-card h-96 rounded-2xl overflow-hidden relative'
+              className='service-card h-96 rounded-2xl overflow-hidden relative sm:pb-8'
             >
               {/* Glass Effect Container */}
               <div 
@@ -184,7 +184,7 @@ const ServicesSection = () => {
               />
 
               {/* Image Container - Top 40% */}
-              <div className='relative h-3/5 sm:h-2/5 overflow-hidden flex items-center justify-center bg-gradient-to-br from-indigo-400/20 to-blue-400/10'>
+              <div className='relative h-3/5 sm:h-4/9 overflow-hidden flex items-center justify-center bg-gradient-to-br from-indigo-400/20 to-blue-400/10'>
                 <img
                   className='service-image h-full w-full object-cover rounded-t-2xl'
                   src={service.image}

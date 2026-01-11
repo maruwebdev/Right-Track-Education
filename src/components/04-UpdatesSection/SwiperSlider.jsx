@@ -24,17 +24,17 @@ const SwiperSlider = () => {
 
                     <SwiperSlide className="">
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <video className='h-96 sm:h-[500px] rounded-4xl border-4 border-gray-500' src="https://res.cloudinary.com/dhk5kzznf/video/upload/f_auto,q_auto/v1766505286/reel1_fedrmw.mp4" controls></video>
+                            <video className='h-96 sm:h-[500px] rounded-4xl border-4 border-gray-500' src="https://res.cloudinary.com/dq9c71raz/video/upload/f_auto,q_auto/v1766907968/reel1_cnuxuj.mp4" controls></video>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center items-center">
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <video className='h-96 sm:h-[500px] rounded-4xl border-4 border-gray-500' src="https://res.cloudinary.com/dhk5kzznf/video/upload/f_auto,q_auto/v1766505297/reel2_tpatwd.mp4" controls></video>
+                            <video className='h-96 sm:h-[500px] rounded-4xl border-4 border-gray-500' src="https://res.cloudinary.com/dq9c71raz/video/upload/f_auto,q_auto/v1766907971/reel2_ulkak2.mp4" controls></video>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center items-center">
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <video className='h-96 sm:h-[500px] rounded-4xl border-4 border-gray-500' src="https://res.cloudinary.com/dhk5kzznf/video/upload/f_auto,q_auto/v1766505287/reel3_akttmw.mp4" controls></video>
+                            <video className='h-96 sm:h-[500px] rounded-4xl border-4 border-gray-500' src="https://res.cloudinary.com/dq9c71raz/video/upload/f_auto,q_auto/v1766907971/reel3_uzc1vq.mp4" controls></video>
                         </div>
                     </SwiperSlide>
 

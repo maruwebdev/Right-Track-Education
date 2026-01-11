@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Set your target date (e.g., Application Deadline: December 31, 2025)
-const targetDate = new Date('December 31, 2025 23:59:59').getTime();
+const targetDate = new Date('January 31, 2026 23:59:59').getTime();
 
 function AdmissionCountdown() {
   const [timeRemaining, setTimeRemaining] = useState(0);

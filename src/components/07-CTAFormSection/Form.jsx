@@ -40,10 +40,10 @@ const Form = () => {
     
         // 2. EmailJS Send (Replace with YOUR IDs)
         emailjs.send(
-            'service_fwd2aal',      // Tera Service ID
-            'template_w278yii',   // Jo abhi save kiya wahan se copy karo
+            'service_051pe2c',      // Tera Service ID
+            'template_ydlagjh',   // Jo abhi save kiya wahan se copy karo
             templateParams,
-            '8HtIiY3ZOtUmO4ysT'     // Account -> API Keys se copy karo
+            'hh36JsrIj9znBBkBT'     // Account -> API Keys se copy karo
         )
         .then((response) => {
             setResult('Form Submitted Successfully! ✅');
