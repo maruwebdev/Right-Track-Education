@@ -193,9 +193,9 @@ const ServicesSection = () => {
               </div>
 
               {/* Text Content - Bottom 60% */}
-              <div className='relative h-2/5 sm:h-3/5 p-5 sm:p-6 flex flex-col justify-between z-10'>
+              <div className='relative h-2/5 sm:h-3/5 px-4 py-2 sm:px-5 sm:py-5 flex flex-col justify-between z-10'>
                 <div>
-                  <h3 className='text-lg sm:text-xl font-bold text-white mb-2 line-clamp-2'>
+                  <h3 className='text-lg sm:text-xl font-bold text-white mb-1 leading-6 sm:leading-7 sm:mb-2 line-clamp-2'>
                     {service.title}
                   </h3>
                   <p className='text-sm sm:text-base text-gray-100 leading-5 line-clamp-6'>

@@ -157,7 +157,7 @@ const TestimonialSection = () => {
               )}
               </div>
               
-              <div className="mt-2 pt-4 border-t border-gray-100">
+              <div className="mt-4 pt-2 border-t border-gray-100">
                 <p className="font-bold text-gray-600 text-lg sm:text-xl ">{item.name}</p>
                 <p className={`text-sm ${blueAccent}`}>{item.college}</p>
               </div>
